@@ -1,0 +1,124 @@
+body {
+  background-color: #e76d9b;
+  height: 100%;
+ display: grid;
+}
+
+.centered {
+  width: 350px;
+	height: 100px;
+	background-color: none;
+
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
+}
+
+#main_box {
+  position: fixed;
+}
+
+.card {
+  color: antiquewhite;
+  border-radius: 2px;
+  border-radius: 60px;
+  height: 100px;
+  width: 350px;
+  background-color: #f4427e;
+  display: flex;
+  border: 5px solid #da1b66;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Dancing Script', cursive;
+  position: absolute;
+}
+
+@media only screen and (max-width: 1280px) {
+  body {
+  }
+
+  .card {
+  }
+}
+
+#top_card {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  z-index: 1;
+}
+
+#bottom_card {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform-origin: center left;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+}
+
+span#hello, span#dribbble {
+  height: 100px;
+  line-height: 100px;
+  display: inline-flex;
+  vertical-align: bottom;
+  justify-content: center;
+  width: 60%;
+  font-size: 32pt;
+  font-weight: lighter;
+}
+
+span#dribbble {
+  position: absolute;
+  left: 30%;
+}
+
+img {
+  height: 100px;
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
+  -o-transform: rotate(1deg);
+  transform: rotate(1deg);
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+}
+
+#top_card:hover img{
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+#top_card:hover ~ #bottom_card{
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotate(58deg);
+  -moz-transform: rotate(58deg);
+  -o-transform: rotate(58deg);
+  -ms-transform: rotate(58deg);
+  transform: rotate(58deg);
+  margin-left: 28px;
+  margin-top: -45px;
+  position: fixed;
+}
