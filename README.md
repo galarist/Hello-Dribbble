@@ -1,2 +1,2 @@
-# Hello-Drible
-## Hello Dribble card slider
+# Hello-Dribbble
+## Hello Dribbble card slider
